@@ -16,6 +16,7 @@
   <p class="desc">One topic in. Outline, draft, and 5 titles out.</p>
   <div class="formcard" id="get">
     <form id="gform" novalidate>
+      <div class="frow"><input type="text" id="nm" name="name" placeholder="First name" required></div>
       <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
       <button type="submit">Send me the skill</button>
     </form>
@@ -44,7 +45,7 @@ form.addEventListener('submit', function (e) {
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
     skill: "content-engine",
-    name: "",
+    name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
     zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/content-engine.zip",
     page: window.location.href

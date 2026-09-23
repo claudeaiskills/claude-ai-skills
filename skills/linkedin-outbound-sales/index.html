@@ -16,6 +16,7 @@
   <p class="desc">Turns one line about who you sell to into personalized LinkedIn outreach: a connection request under 300 characters, a thanks note for when they accept, a silent follow-up, and comments built for their real posts. No pitching until they answer, no templates, no spam tools.</p>
   <div class="formcard" id="get">
     <form id="gform" novalidate>
+      <div class="frow"><input type="text" id="nm" name="name" placeholder="First name" required></div>
       <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
       <button type="submit">Send me the skill</button>
     </form>
@@ -44,7 +45,7 @@ form.addEventListener('submit', function (e) {
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
     skill: "linkedin-outbound-sales",
-    name: "",
+    name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
     zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
     page: window.location.href
