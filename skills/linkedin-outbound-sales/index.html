@@ -4,23 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LinkedIn Outbound Sales - free Claude skill</title>
-<meta name="description" content="Connection notes that get replies. No pitch until they answer. Get the LinkedIn Outbound Sales skill free for Claude, no ads, no card.">
+<meta name="description" content="Connection notes that get replies. No pitch until they answer. Get the LinkedIn Outbound Sales skill free for Claude.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="dark">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
-<div class="wrap">
-  <div class="chips"><span class="chip">CLAUDE</span><span class="chip">LINKEDIN</span></div>
+<div class="wrap mini">
+  <div class="chips"><img class="chipimg" src="../../assets/logos/claude.png" alt=""><img class="chipimg" src="../../assets/logos/linkedin.png" alt=""></div>
   <h1>LinkedIn Outbound Sales</h1>
   <p class="lede">Connection notes that get replies. No pitch until they answer.</p>
-  <div class="examples"><b>Try it</b><p>Try it with: "Outreach for a SaaS founder selling to HR teams; prospect is an HR director at a 200-person logistics company."</p></div>
-  <div class="cards"><div class="card"><div><b>01</b><p>One-line persona in, full outreach package out: connection request, thanks note, follow-up, comments</p></div></div><div class="card"><div><b>02</b><p>Connection request under 300 characters with a real hook, zero pitching</p></div></div><div class="card"><div><b>03</b><p>Follow-up that adds value and stops nagging - one shot, then silence</p></div></div><div class="card"><div><b>04</b><p>Value-add comments written for their actual posts, not 'Great post!'</p></div></div><div class="card"><div><b>05</b><p>2-minute install, works in Claude, Codex, and any AI chat tool</p></div></div></div>
   <div class="formcard" id="get">
-    <h2>Get LinkedIn Outbound Sales - free</h2>
-    <p class="sub">Enter your email and I'll send you the skill files and the 2-minute install guide.</p>
     <form id="gform" novalidate>
-      <div class="frow"><label for="nm">First name</label><input type="text" id="nm" name="name" required></div>
-      <div class="frow"><label for="em">Email</label><input type="email" id="em" name="email" required></div>
+      <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
       <button type="submit">Send me the skill</button>
     </form>
     <div class="success" id="ok">
@@ -29,12 +24,9 @@
       <a href="https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip" target="_blank" rel="noopener">Download linkedin-outbound-sales.zip</a></p>
     </div>
   </div>
-  <div class="upsell soon">
-    <h3>Want more skills and a setup playbook?</h3>
-    <p>Skill Stack bundles the best skills in one package with step-by-step installs and
-    12 months of updates. One payment, your skills forever.</p>
-    <a href="https://YOUR-GUMROAD-LISTING" target="_blank" rel="noopener">See the Skill Stack</a>
-  </div>
+  <p class="smallcta">
+    <a href="https://claudeaiskills.gumroad.com/l/claude-ai-skill-stack" target="_blank" rel="noopener">Get the full Skill Stack</a>
+  </p>
 </div>
 <footer>
 <div class="wrap">&copy; Claude AI Skills. Free skill, no spam, unsubscribe anytime.</div>
@@ -50,7 +42,7 @@ form.addEventListener('submit', function (e) {
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
     skill: "linkedin-outbound-sales",
-    name: document.getElementById('nm').value.trim(),
+    name: "",
     email: document.getElementById('em').value.trim(),
     zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
     page: window.location.href

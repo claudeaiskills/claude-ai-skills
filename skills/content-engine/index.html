@@ -4,23 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Content Engine - free Claude skill</title>
-<meta name="description" content="One topic in. Outline, draft, and 5 titles out. Get the Content Engine skill free for Claude, no ads, no card.">
+<meta name="description" content="One topic in. Outline, draft, and 5 titles out. Get the Content Engine skill free for Claude.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
-<div class="wrap">
+<div class="wrap mini">
   <div class="chips"><span class="chip">CLAUDE</span><span class="chip">CONTENT ENGINE</span></div>
   <h1>Content Engine</h1>
   <p class="lede">One topic in. Outline, draft, and 5 titles out.</p>
-  <div class="examples"><b>Try it</b><p>Try it with: "One article about scheduling content for a small business."</p></div>
-  <div class="cards"><div class="card"><div><b>01</b><p>One command: type a topic, get outline + draft + 5 titles</p></div></div><div class="card"><div><b>02</b><p>Fixed article blueprint so every post follows the same winning structure</p></div></div><div class="card"><div><b>03</b><p>Voice rules that kill corporate filler and make it readable out loud</p></div></div><div class="card"><div><b>04</b><p>Works in Claude, Codex, and any AI chat tool on the market</p></div></div><div class="card"><div><b>05</b><p>2-minute install, no ads, no data collection</p></div></div></div>
   <div class="formcard" id="get">
-    <h2>Get Content Engine - free</h2>
-    <p class="sub">Enter your email and I'll send you the skill files and the 2-minute install guide.</p>
     <form id="gform" novalidate>
-      <div class="frow"><label for="nm">First name</label><input type="text" id="nm" name="name" required></div>
-      <div class="frow"><label for="em">Email</label><input type="email" id="em" name="email" required></div>
+      <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
       <button type="submit">Send me the skill</button>
     </form>
     <div class="success" id="ok">
@@ -29,12 +24,9 @@
       <a href="https://claudeaiskills.github.io/claude-ai-skills/zips/content-engine.zip" target="_blank" rel="noopener">Download content-engine.zip</a></p>
     </div>
   </div>
-  <div class="upsell soon">
-    <h3>Want more skills and a setup playbook?</h3>
-    <p>Skill Stack bundles the best skills in one package with step-by-step installs and
-    12 months of updates. One payment, your skills forever.</p>
-    <a href="https://YOUR-GUMROAD-LISTING" target="_blank" rel="noopener">See the Skill Stack</a>
-  </div>
+  <p class="smallcta">
+    <a href="https://claudeaiskills.gumroad.com/l/claude-ai-skill-stack" target="_blank" rel="noopener">Get the full Skill Stack</a>
+  </p>
 </div>
 <footer>
 <div class="wrap">&copy; Claude AI Skills. Free skill, no spam, unsubscribe anytime.</div>
@@ -50,7 +42,7 @@ form.addEventListener('submit', function (e) {
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
     skill: "content-engine",
-    name: document.getElementById('nm').value.trim(),
+    name: "",
     email: document.getElementById('em').value.trim(),
     zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/content-engine.zip",
     page: window.location.href

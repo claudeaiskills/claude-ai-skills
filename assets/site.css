@@ -24,6 +24,13 @@ body.dark {
 }
 body.dark .upsell a { border-color: var(--ink); color: var(--ink); }
 body.dark .upsell a:hover { background: var(--ink); color: var(--paper); }
+.chipimg { height: 44px; margin-right: 20px; object-fit: contain; }
+.mini { max-width: 520px; text-align: center; }
+.mini h1 { margin-top: 4px; }
+.mini .formcard { text-align: left; }
+.mini .smallcta { margin: 18px 0 6px; }
+.mini .smallcta a { color: var(--accent); font-family: "Segoe UI", system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+.mini .brandbar span { display: none; }
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
 .brandbar {
   padding: 18px 0 14px;
