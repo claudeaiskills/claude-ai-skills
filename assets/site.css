@@ -187,7 +187,10 @@ input[type="text"], input[type="email"] {
   font-size: 16px;
   font-family: "Segoe UI", system-ui, sans-serif;
   background: var(--paper);
+  color: var(--ink);
+  caret-color: var(--ink);
 }
+input::placeholder { color: var(--muted); opacity: 1; }
 button {
   width: 100%;
   padding: 14px;
