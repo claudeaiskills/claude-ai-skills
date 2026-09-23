@@ -14,6 +14,16 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+body.dark {
+  --paper: #0b1230;
+  --ink: #f5f1e6;
+  --muted: #aab3d4;
+  --line: #2a3560;
+  --accent: #f2c94c;
+  --card: #111a3d;
+}
+body.dark .upsell a { border-color: var(--ink); color: var(--ink); }
+body.dark .upsell a:hover { background: var(--ink); color: var(--paper); }
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
 .brandbar {
   padding: 18px 0 14px;

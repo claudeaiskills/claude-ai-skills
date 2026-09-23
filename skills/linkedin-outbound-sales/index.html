@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Content Engine - free Claude skill</title>
-<meta name="description" content="One topic in. Outline, draft, and 5 titles out. Get the Content Engine skill free for Claude, no ads, no card.">
+<title>LinkedIn Outbound Sales - free Claude skill</title>
+<meta name="description" content="Connection notes that get replies. No pitch until they answer. Get the LinkedIn Outbound Sales skill free for Claude, no ads, no card.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
-<body class="">
+<body class="dark">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
 <div class="wrap">
-  <div class="chips"><span class="chip">CLAUDE</span><span class="chip">CONTENT ENGINE</span></div>
-  <h1>Content Engine</h1>
-  <p class="lede">One topic in. Outline, draft, and 5 titles out.</p>
-  <div class="examples"><b>Try it</b><p>Try it with: "One article about scheduling content for a small business."</p></div>
-  <div class="cards"><div class="card"><div><b>01</b><p>One command: type a topic, get outline + draft + 5 titles</p></div></div><div class="card"><div><b>02</b><p>Fixed article blueprint so every post follows the same winning structure</p></div></div><div class="card"><div><b>03</b><p>Voice rules that kill corporate filler and make it readable out loud</p></div></div><div class="card"><div><b>04</b><p>Works in Claude, Codex, and any AI chat tool on the market</p></div></div><div class="card"><div><b>05</b><p>2-minute install, no ads, no data collection</p></div></div></div>
+  <div class="chips"><span class="chip">CLAUDE</span><span class="chip">LINKEDIN</span></div>
+  <h1>LinkedIn Outbound Sales</h1>
+  <p class="lede">Connection notes that get replies. No pitch until they answer.</p>
+  <div class="examples"><b>Try it</b><p>Try it with: "Outreach for a SaaS founder selling to HR teams; prospect is an HR director at a 200-person logistics company."</p></div>
+  <div class="cards"><div class="card"><div><b>01</b><p>One-line persona in, full outreach package out: connection request, thanks note, follow-up, comments</p></div></div><div class="card"><div><b>02</b><p>Connection request under 300 characters with a real hook, zero pitching</p></div></div><div class="card"><div><b>03</b><p>Follow-up that adds value and stops nagging - one shot, then silence</p></div></div><div class="card"><div><b>04</b><p>Value-add comments written for their actual posts, not 'Great post!'</p></div></div><div class="card"><div><b>05</b><p>2-minute install, works in Claude, Codex, and any AI chat tool</p></div></div></div>
   <div class="formcard" id="get">
-    <h2>Get Content Engine - free</h2>
+    <h2>Get LinkedIn Outbound Sales - free</h2>
     <p class="sub">Enter your email and I'll send you the skill files and the 2-minute install guide.</p>
     <form id="gform" novalidate>
       <div class="frow"><label for="nm">First name</label><input type="text" id="nm" name="name" required></div>
@@ -26,7 +26,7 @@
     <div class="success" id="ok">
       <h3>Check your inbox</h3>
       <p>Your download is on the way. You can also grab it right now:
-      <a href="https://claudeaiskills.github.io/claude-ai-skills/zips/content-engine.zip" target="_blank" rel="noopener">Download content-engine.zip</a></p>
+      <a href="https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip" target="_blank" rel="noopener">Download linkedin-outbound-sales.zip</a></p>
     </div>
   </div>
   <div class="upsell soon">
@@ -49,10 +49,10 @@ form.addEventListener('submit', function (e) {
   const btn = form.querySelector('button');
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
-    skill: "content-engine",
+    skill: "linkedin-outbound-sales",
     name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
-    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/content-engine.zip",
+    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
     page: window.location.href
   };
   fetch(FORM_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
