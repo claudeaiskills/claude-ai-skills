@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Credits and license audit</title>
+<meta name="description" content="Every skill referenced in the 25 posts, with its author, repo and actual license status.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{--ink:#12100e;--cream:#f4efe7;--paper:#fffdf9;--line:#ddd3c4;--muted:#7a6f63;--ember:#c2410c;--olive:#4d5f3a;--chip:#efe7da}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Georgia,serif}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+header{background:var(--ink);color:var(--cream);padding:46px 0 38px}
+header h1{font-size:clamp(26px,5vw,42px);font-weight:400;line-height:1.1;margin:0 0 14px}
+header p{color:#bdb0a0;max-width:62ch;margin:0}
+.eyebrow{font:600 11px ui-sans-serif,system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#c9b9a4;margin:0 0 16px}
+.note{background:#fff;border-left:4px solid var(--ember);padding:18px 22px;margin:34px 0;box-shadow:0 8px 24px -14px rgba(18,16,14,.3)}
+.note h3{margin:0 0 8px;font:600 16px ui-sans-serif,system-ui,sans-serif}
+.note p{margin:0 0 8px;font-size:15px}.note p:last-child{margin:0}
+.post{background:var(--paper);border:1px solid var(--line);margin:0 0 26px;box-shadow:0 8px 24px -16px rgba(18,16,14,.35)}
+.post .h{padding:16px 22px 14px;border-bottom:1px solid var(--line);background:#fbf8f3;display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+.num{font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--ink);color:var(--cream);width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex:none}
+.h h2{margin:0 0 4px;font-size:18px;font-weight:400}
+.h .m{font:12px ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
+.h .m b{color:var(--ink)}
+.c{padding:22px}
+.c pre{font:16px/1.66 Georgia,serif;white-space:pre-wrap;margin:0}
+.a{padding:12px 22px;border-top:1px solid var(--line);background:#faf6ef;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+button{font:600 12px ui-sans-serif,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--ink);background:var(--ink);color:var(--cream);cursor:pointer}
+button.g{background:transparent;color:var(--ink)}
+.a .n{font:12px ui-sans-serif,system-ui,sans-serif;color:var(--muted);margin-left:auto}
+table{width:100%;border-collapse:collapse;font:14px ui-sans-serif,system-ui,sans-serif;margin:20px 0 34px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--ink);color:var(--cream);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+tr:nth-child(even) td{background:#faf6ef}
+code{font:13px ui-monospace,Consolas,monospace;background:var(--chip);padding:2px 5px}
+.pill{font:600 10px ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:3px 7px;border-radius:2px;background:var(--chip);color:var(--olive);white-space:nowrap}
+.pill.bad{background:#fbe6d8;color:#9a3412}
+footer{background:var(--ink);color:#a89b8b;padding:40px 0;font-size:14px}footer b{color:var(--cream)}
+.hide{display:none}
+</style></head><body>
+<header><div class="wrap">
+<p class="eyebrow">Claude AI Skills</p>
+<h1>Credits and license audit</h1>
+<p>Every skill referenced in the 25 posts, with its author, repo and actual license status.</p>
+</div></header>
+<div class="wrap">
+
+<div class="note"><h3>Why this page exists</h3>
+<p>I pulled these 25 skills locally to read them and check the numbers. I did not republish any of them, and this page exists so the authors are credited properly.</p>
+<p>Four of the most installed skills carry no open license at all, and the watermark remover at rank 14 has a custom proprietary license. That is worth knowing before you build a business on top of this ecosystem.</p></div>
+<table><tr><th>Skill</th><th>Author / repo</th><th>License</th><th>Note</th></tr>
+<tr><td><b>find-skills</b></td>
+<td>vercel-labs/skills</td>
+<td><span class="pill">MIT</span></td>
+<td>rank 1 all time, 3.6M installs</td></tr>
+<tr><td><b>setup-matt-pocock-skills</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td>the installer that explains the clustering</td></tr>
+<tr><td><b>handoff</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>triage</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>prototype</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>grill-me</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td>same skill as grill-with-docs and grilling</td></tr>
+<tr><td><b>grill-with-docs</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td>same skill as grill-me and grilling</td></tr>
+<tr><td><b>grilling</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td>same skill as grill-me and grill-with-docs</td></tr>
+<tr><td><b>teach</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>domain-modeling</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>codebase-design</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>improve-codebase-architecture</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>tdd</b></td>
+<td>mattpocock/skills</td>
+<td><span class="pill">MIT</span></td>
+<td></td></tr>
+<tr><td><b>agent-browser</b></td>
+<td>vercel-labs/agent-browser</td>
+<td><span class="pill">Apache-2.0</span></td>
+<td>rank 6 all time, 943K installs</td></tr>
+<tr><td><b>react-best-practices</b></td>
+<td>vercel-labs/agent-skills</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>listed as vercel-react-best-practices</td></tr>
+<tr><td><b>web-design-guidelines</b></td>
+<td>vercel-labs/agent-skills</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>133K weekly installs</td></tr>
+<tr><td><b>frontend-design</b></td>
+<td>anthropics/skills</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>rank 7 all time, 923K installs</td></tr>
+<tr><td><b>superpowers</b></td>
+<td>obra/superpowers</td>
+<td><span class="pill">MIT</span></td>
+<td>291,648 stars</td></tr>
+<tr><td><b>andrej-karpathy-skills</b></td>
+<td>forrestchang/andrej-karpathy-skills</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>215,157 stars, not a SKILL.md</td></tr>
+<tr><td><b>/bro</b></td>
+<td>dmmulroy/.dotfiles</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>7 line skill, viral Hacker News Aug 4, 962 stars, verified 2026-09-26</td></tr>
+<tr><td><b>claude-watermark-remover</b></td>
+<td>Rjgyana/MarkClean-ClaudeWatermarkRemover</td>
+<td><span class="pill bad">PROPRIETARY</span></td>
+<td>rank 14 all time, custom MarkClean license, verified 2026-09-26</td></tr>
+<tr><td><b>remotion-best-practices</b></td>
+<td>remotion-dev/skills</td>
+<td><span class="pill bad">NONE DECLARED</span></td>
+<td>117K weekly installs</td></tr>
+<tr><td><b>claude-mem</b></td>
+<td>thedotmack/claude-mem</td>
+<td><span class="pill">Apache-2.0</span></td>
+<td>94,700 stars</td></tr>
+<tr><td><b>security-audit</b></td>
+<td>cloudflare/security-audit-skill</td>
+<td><span class="pill">MIT</span></td>
+<td>21,642 stars</td></tr>
+<tr><td><b>agentjacking-defense</b></td>
+<td>community advisory pattern</td>
+<td><span class="pill">n/a</span></td>
+<td>disclosed 14 Jun 2026, 85 percent field exploitation</td></tr>
+<tr><td><b>career-ops</b></td>
+<td>santifer/career-ops</td>
+<td><span class="pill">MIT</span></td>
+<td>72,799 stars</td></tr>
+<tr><td><b>neuroarxiv</b></td>
+<td>UditAkhourii/neuroarxiv</td>
+<td><span class="pill">MIT</span></td>
+<td>431 stars</td></tr>
+<tr><td><b>i-have-adhd</b></td>
+<td>ayghri/i-have-adhd</td>
+<td><span class="pill">MIT</span></td>
+<td>51,205 stars</td></tr>
+<tr><td><b>book-to-skill</b></td>
+<td>virgiliojr94/book-to-skill</td>
+<td><span class="pill">MIT</span></td>
+<td>32,412 stars</td></tr>
+<tr><td><b>impeccable</b></td>
+<td>pbakaus/impeccable</td>
+<td><span class="pill">Apache-2.0</span></td>
+<td>71,177 stars</td></tr>
+<tr><td><b>hyperframes-cli</b></td>
+<td>heygen-com/hyperframes</td>
+<td><span class="pill">Apache-2.0</span></td>
+<td>677K installs</td></tr>
+<tr><td><b>ponytail</b></td>
+<td>DietrichGebert/ponytail</td>
+<td><span class="pill">MIT</span></td>
+<td>145,985 stars</td></tr>
+<tr><td><b>taste-skill</b></td>
+<td>Leonxlnx/taste-skill</td>
+<td><span class="pill">MIT</span></td>
+<td>90,135 stars</td></tr>
+<tr><td><b>text-to-cad</b></td>
+<td>earthtojake/text-to-cad</td>
+<td><span class="pill">MIT</span></td>
+<td>16,370 stars</td></tr>
+<tr><td><b>video-editgen</b></td>
+<td>no public source found</td>
+<td><span class="pill">unverified</span></td>
+<td>claimed 666K installs, no such repo; media-labs org is empty (0 public repos)</td></tr>
+<tr><td><b>web-interface-guidelines</b></td>
+<td>vercel-labs/web-interface-guidelines</td>
+<td><span class="pill">MIT</span></td>
+<td>895 stars, separate repo</td></tr>
+<tr><td><b>dev-browser</b></td>
+<td>SawyerHood/dev-browser</td>
+<td><span class="pill">MIT</span></td>
+<td>6,300 installs per directory listing, 6,637 stars, verified 2026-09-26</td></tr>
+</table>
+<div class="note"><h3>The licence spread, honestly</h3>
+<p>MIT dominates, and MIT is fine to learn from and fine to reference. Apache-2.0 shows up for the bigger corporate repos and carries the same patent grant.</p>
+<p>The four "none declared" entries are Anthropic's own skills, Vercel's agent-skills, Remotion's skills, and the Karpathy CLAUDE.md. Absence of a license is not permission. Do not redistribute those.</p>
+<p>Rank 14, the Claude Watermark Remover, ships a custom MarkClean license. That one is not open source at all. I have kept it local and it is not published here.</p></div>
+</div>
+<footer><div class="wrap">
+<p><b>Data provenance.</b> Install counts from the Claude Market all-time leaderboard dated 2026-09-25. Star counts from the GitHub API, verified 2026-09-26. Sponsored placements and the fourteen Lark connector slots were excluded.</p>
+<p><b>No third-party skill code is redistributed here.</b> This is attribution and research only. Every project listed belongs to its author.</p>
+</div></footer>
+<script>
+function flash(b,msg){
+  var old=b.getAttribute('data-label');
+  b.textContent=msg;
+  setTimeout(function(){b.textContent=old},1400);
+}
+function copy(s,b,msg){
+  var done=function(){flash(b,msg)};
+  var fail=function(){flash(b,'press Ctrl+C')};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(s).then(done).catch(function(){legacy(s,done,fail)});
+  }else{legacy(s,done,fail)}
+}
+function legacy(s,done,fail){
+  try{
+    var t=document.createElement('textarea');
+    t.value=s;t.setAttribute('readonly','');
+    t.style.position='fixed';t.style.top='-1000px';
+    document.body.appendChild(t);t.select();
+    var ok=document.execCommand('copy');
+    document.body.removeChild(t);
+    ok?done():fail();
+  }catch(e){fail()}
+}
+document.querySelectorAll('.post').forEach(function(p){
+  var cap=p.querySelector('pre').innerText;
+  var fc=p.querySelector('[data-copy="comment"]').getAttribute('data-text');
+  p.querySelectorAll('button').forEach(function(b){
+    b.setAttribute('data-label',b.textContent);
+    b.addEventListener('click',function(){
+      b.getAttribute('data-copy')==='comment'?copy(fc,b,'Copied'):copy(cap,b,'Copied');
+    });
+  });
+});
+</script>
+</body></html>

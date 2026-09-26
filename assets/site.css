@@ -245,3 +245,20 @@ footer { padding: 26px 0 40px; color: var(--muted); font-size: 13px; border-top:
   h1 { font-size: 30px; }
   .brandbar span { display: none; }
 }
+/* attribution + features + catalogue, added with the 25 campaign skills */
+.fh { font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 30px 0 10px; }
+.feats { margin: 0 0 6px; padding-left: 20px; }
+.feats li { margin: 7px 0; line-height: 1.5; }
+dl.attr { display: grid; grid-template-columns: 120px 1fr; gap: 6px 14px; margin: 0; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; font-size: 15px; }
+dl.attr dt { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.6px; padding-top: 2px; }
+dl.attr dd { margin: 0; line-height: 1.5; overflow-wrap: anywhere; }
+dl.attr dd a { overflow-wrap: anywhere; }
+.attrnote { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 10px 0 0; }
+.fnote { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+.mini2 { color: var(--muted); font-size: 13px; margin: 6px 0; }
+.tag { display: inline-block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; padding: 2px 7px; border-radius: 4px; border: 1px solid var(--line); }
+.tag.code { color: #1c6b47; border-color: #1c6b4733; }
+.tag.card { color: #8a5a12; border-color: #8a5a1233; }
+body.dark .tag.code { color: #6fd39b; border-color: #6fd39b44; }
+body.dark .tag.card { color: #f2c94c; border-color: #f2c94c44; }
+footer a { color: var(--muted); }

@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LinkedIn Outbound Sales - free Claude skill</title>
-<meta name="description" content="One prospect line in. Connection request, thanks note, and follow-up out. Get the LinkedIn Outbound Sales skill free for Claude.">
+<title>Neuroarxiv - free Claude skill</title>
+<meta name="description" content="It checks the papers before it lets you design anything. Get the Neuroarxiv skill free for Claude.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
-<body class="dark">
+<body class="">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
 <div class="wrap mini">
-  <div class="chips"><img class="chipimg" src="../../assets/logos/claude.png" alt=""><img class="chipimg" src="../../assets/logos/linkedin.png" alt=""></div>
-  <h1>LinkedIn Outbound Sales</h1>
-  <p class="lede">One prospect line in. Connection request, thanks note, and follow-up out.</p>
-  <p class="desc">Turns one line about who you sell to into personalized LinkedIn outreach: a connection request under 300 characters, a thanks note for when they accept, a silent follow-up, and comments built for their real posts. No pitching until they answer, no templates, no spam tools.</p>
-  <h3 class="fh">What you get</h3><ul class="feats"><li>One-line persona in, full outreach package out</li><li>Connection request under 300 characters, zero pitching</li><li>Thanks note, silent follow-up, and comments for their real posts</li><li>No templates, no spam tooling, no invented shared connections</li><li>2-minute install, works in Claude, Codex, and any AI chat tool</li></ul>
+  <div class="chips"><span class="chip">CLAUDE</span><span class="chip">RESEARCH</span></div>
+  <h1>Neuroarxiv</h1>
+  <p class="lede">It checks the papers before it lets you design anything.</p>
+  <p class="desc">Before producing a design, it searches the neuroscience literature for prior work and tells you what already exists. The value is not the summary, it is the gate. Most AI design work is reinvention, and this skill makes the reinvention visible before you spend a week on it.</p>
   
+  <h3 class="fh">Source and licence</h3><dl class="attr"><dt>Skill</dt><dd>Neuroarxiv</dd><dt>By</dt><dd>UditAkhourii/neuroarxiv</dd><dt>Licence</dt><dd>MIT</dd><dt>Figures</dt><dd>431 stars</dd><dt>Upstream</dt><dd><a href="https://github.com/UditAkhourii/neuroarxiv" target="_blank" rel="noopener">https://github.com/UditAkhourii/neuroarxiv</a></dd></dl><p class="attrnote">We did not write this skill. This zip is a convenience repackaging so you can install it in one step. The author and licence named above govern reuse, and the full details travel inside the zip as SOURCE.txt.</p>
 
   <div class="free" id="get">
     <h3>Get this free</h3>
@@ -60,10 +60,10 @@ form.addEventListener('submit', function (e) {
   const btn = form.querySelector('button');
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
-    skill: "linkedin-outbound-sales",
+    skill: "neuroarxiv",
     name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
-    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
+    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/neuroarxiv.zip",
     page: window.location.href
   };
   fetch(FORM_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })

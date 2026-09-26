@@ -3,28 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LinkedIn Outbound Sales - free Claude skill</title>
-<meta name="description" content="One prospect line in. Connection request, thanks note, and follow-up out. Get the LinkedIn Outbound Sales skill free for Claude.">
+<title>Agentjacking Defence Checklist - free Claude skill</title>
+<meta name="description" content="A researcher got 85 percent field exploitation. This is the list of what must be true. Get the Agentjacking Defence Checklist skill free for Claude.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="dark">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
 <div class="wrap mini">
-  <div class="chips"><img class="chipimg" src="../../assets/logos/claude.png" alt=""><img class="chipimg" src="../../assets/logos/linkedin.png" alt=""></div>
-  <h1>LinkedIn Outbound Sales</h1>
-  <p class="lede">One prospect line in. Connection request, thanks note, and follow-up out.</p>
-  <p class="desc">Turns one line about who you sell to into personalized LinkedIn outreach: a connection request under 300 characters, a thanks note for when they accept, a silent follow-up, and comments built for their real posts. No pitching until they answer, no templates, no spam tools.</p>
-  <h3 class="fh">What you get</h3><ul class="feats"><li>One-line persona in, full outreach package out</li><li>Connection request under 300 characters, zero pitching</li><li>Thanks note, silent follow-up, and comments for their real posts</li><li>No templates, no spam tooling, no invented shared connections</li><li>2-minute install, works in Claude, Codex, and any AI chat tool</li></ul>
+  <div class="chips"><span class="chip">SECURITY</span><span class="chip">CHECKLIST</span></div>
+  <h1>Agentjacking Defence Checklist</h1>
+  <p class="lede">A researcher got 85 percent field exploitation. This is the list of what must be true.</p>
+  <p class="desc">In June a researcher disclosed an attack against coding agents and reported 85 percent exploitation in field tests, working on five of six real setups. Not a theoretical model. The attack arrives disguised as a build error. The defence is a checklist of things that must be true before an agent is allowed near your pipeline, and this card is that checklist with the source.</p>
   
+  <h3 class="fh">Source and licence</h3><dl class="attr"><dt>Skill</dt><dd>Agentjacking Defence Checklist</dd><dt>By</dt><dd>community advisory pattern</dd><dt>Licence</dt><dd>n/a, advisory writeup</dd><dt>Figures</dt><dd>disclosed 14 Jun 2026, 85 percent field exploitation</dd><dt>Upstream</dt><dd><a href="https://claudeaiskills.github.io/claude-ai-skills/credits.html" target="_blank" rel="noopener">https://claudeaiskills.github.io/claude-ai-skills/credits.html</a></dd></dl><p class="attrnote">This one is shipped as a written card plus the upstream link, because the code itself is either proprietary, has no single public repository, or is an advisory rather than a released skill.</p>
 
   <div class="free" id="get">
     <h3>Get this free</h3>
-    
+    <p class="fnote">What lands in your inbox is a short writeup, not code.</p>
     <div class="formcard">
       <form id="gform" novalidate>
         <div class="frow"><input type="text" id="nm" name="name" placeholder="First name" required></div>
         <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
-        <button type="submit" class="ghost">Send me the free skill</button>
+        <button type="submit" class="ghost">Send me the free writeup</button>
       </form>
       <div class="success" id="ok">
         <h3>Check your inbox</h3>
@@ -60,10 +60,10 @@ form.addEventListener('submit', function (e) {
   const btn = form.querySelector('button');
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
-    skill: "linkedin-outbound-sales",
+    skill: "agentjacking-defense",
     name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
-    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
+    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/agentjacking-defense.zip",
     page: window.location.href
   };
   fetch(FORM_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })

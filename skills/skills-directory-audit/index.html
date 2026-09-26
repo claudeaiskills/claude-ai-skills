@@ -3,28 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LinkedIn Outbound Sales - free Claude skill</title>
-<meta name="description" content="One prospect line in. Connection request, thanks note, and follow-up out. Get the LinkedIn Outbound Sales skill free for Claude.">
+<title>The Skills Directory Audit - free Claude skill</title>
+<meta name="description" content="191,034 files, 19,200 authors, and nobody pays for placement. Get the The Skills Directory Audit skill free for Claude.">
 <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body class="dark">
 <div class="brandbar"><div class="wrap"><b>Claude AI Skills</b></div></div>
 <div class="wrap mini">
-  <div class="chips"><img class="chipimg" src="../../assets/logos/claude.png" alt=""><img class="chipimg" src="../../assets/logos/linkedin.png" alt=""></div>
-  <h1>LinkedIn Outbound Sales</h1>
-  <p class="lede">One prospect line in. Connection request, thanks note, and follow-up out.</p>
-  <p class="desc">Turns one line about who you sell to into personalized LinkedIn outreach: a connection request under 300 characters, a thanks note for when they accept, a silent follow-up, and comments built for their real posts. No pitching until they answer, no templates, no spam tools.</p>
-  <h3 class="fh">What you get</h3><ul class="feats"><li>One-line persona in, full outreach package out</li><li>Connection request under 300 characters, zero pitching</li><li>Thanks note, silent follow-up, and comments for their real posts</li><li>No templates, no spam tooling, no invented shared connections</li><li>2-minute install, works in Claude, Codex, and any AI chat tool</li></ul>
+  <div class="chips"><span class="chip">RESEARCH</span><span class="chip">THE DATA</span></div>
+  <h1>The Skills Directory Audit</h1>
+  <p class="lede">191,034 files, 19,200 authors, and nobody pays for placement.</p>
+  <p class="desc">The numbers behind the whole series: 191,034 skill files, 19,200 credited authors, 1,500 repositories, refreshed twice a day. The sentence that matters is the last one. The directory states plainly that nobody pays for placement or ranking. A directory that makes nothing from ranking is the only honest one on this list, and it is the reason these numbers can be trusted at all.</p>
   
+  <h3 class="fh">Source and licence</h3><dl class="attr"><dt>Skill</dt><dd>The Skills Directory Audit</dd><dt>By</dt><dd>Claude AI Skills</dd><dt>Licence</dt><dd>our own work</dd><dt>Figures</dt><dd>191,034 files, 19,200 authors, 1,500 repos</dd><dt>Upstream</dt><dd><a href="https://claudeaiskills.github.io/claude-ai-skills/credits.html" target="_blank" rel="noopener">https://claudeaiskills.github.io/claude-ai-skills/credits.html</a></dd></dl><p class="attrnote">This one is shipped as a written card plus the upstream link, because the code itself is either proprietary, has no single public repository, or is an advisory rather than a released skill.</p>
 
   <div class="free" id="get">
     <h3>Get this free</h3>
-    
+    <p class="fnote">What lands in your inbox is a short writeup, not code.</p>
     <div class="formcard">
       <form id="gform" novalidate>
         <div class="frow"><input type="text" id="nm" name="name" placeholder="First name" required></div>
         <div class="frow"><input type="email" id="em" name="email" placeholder="Your email" required></div>
-        <button type="submit" class="ghost">Send me the free skill</button>
+        <button type="submit" class="ghost">Send me the free writeup</button>
       </form>
       <div class="success" id="ok">
         <h3>Check your inbox</h3>
@@ -60,10 +60,10 @@ form.addEventListener('submit', function (e) {
   const btn = form.querySelector('button');
   btn.disabled = true; btn.textContent = 'Sending...';
   const payload = {
-    skill: "linkedin-outbound-sales",
+    skill: "skills-directory-audit",
     name: document.getElementById('nm').value.trim(),
     email: document.getElementById('em').value.trim(),
-    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/linkedin-outbound-sales.zip",
+    zipUrl: "https://claudeaiskills.github.io/claude-ai-skills/zips/skills-directory-audit.zip",
     page: window.location.href
   };
   fetch(FORM_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) })
